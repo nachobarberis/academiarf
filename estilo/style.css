@@ -1,0 +1,556 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Roboto:wght@400&display=swap');
+
+*{
+	padding: 0;
+	margin: 0;
+	font-family: 'Roboto Condensed', sans-serif;
+	box-sizing: border-box;
+	overflow-x: hidden;
+}
+
+h1,h2,h3{
+	font-family: 'Oswald', sans-serif;
+	padding-top: 8px;
+	overflow: hidden;
+}
+
+h4{
+	padding-top: 10px;
+	font-family: 'Oswald', sans-serif;
+	color: lightgrey;
+	font-size: 1em;
+	text-align: center;
+	overflow: hidden;
+}
+
+h1{
+	text-transform: uppercase;
+}
+
+p{
+	font-family: 'Roboto', sans-serif;
+	text-align: justify;
+	padding-top: 8px;
+
+}
+
+nav, main, footer{
+	padding: 20px;
+	color: black;
+}
+
+nav{
+	background-color: #A29C9C;
+	grid-area: nav;
+	overflow: hidden;
+}
+
+main{
+	background-color: rgb(229,229,229);
+	grid-area: main;
+}
+
+aside{
+	grid-area: aside;
+	background-color: rgb(30, 30, 30);
+}
+
+	aside h3{
+		color: white;
+		padding-bottom: 8px;
+	}
+
+footer{
+	background-color: orange;
+	grid-area: pie;
+}
+
+header{
+	grid-area: header;
+}
+
+body{
+	background-color: rgb(33,33,33);
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 10vh auto auto auto auto;
+	grid-template-areas: 
+	"nav" 
+	"header"
+	"main" 
+	"aside"
+	"pie"
+}
+
+section{
+	overflow: auto;
+}
+
+.logo img{
+	height: 80%;
+}
+
+/*Botonera y logo ------------------------*/
+.logo{
+	/*background-color: red;*/
+	width: auto;
+}
+
+	.logo img{
+		width: 3.8em;
+	}
+
+nav{
+	height: 100%;
+	display: flex;
+	align-items: center;
+	padding: 10px 30px;	
+	justify-content: space-between;
+	background-color: white;
+	grid-area: nav;
+}
+
+nav ul li {
+	display: inline;
+	font-family: 'Oswald', sans-serif;
+	font-size: 1.3em;	
+	padding-left: 15px;
+}
+
+ul li a{
+		text-decoration: none;
+		text-transform: uppercase;
+}
+
+ul li a:link{
+	color: black;
+}
+
+ul li a:visited{
+	color: black;
+}
+
+.navegacion{
+	width: 0%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	visibility: hidden;
+}
+
+.menuBoton{
+		width: auto;
+		visibility: visible;
+	}
+
+/*Aside -----------------*/
+#contSponsor{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	align-content: space-around;
+}
+
+#sponsor{
+	width: 100%;
+	padding: 15px;
+}
+
+	#sponsor img{
+		width: 100%;
+		cursor: pointer;
+	}
+
+	#sponsor h3{
+		color: darkgray;
+	}
+/*----------------------*/
+
+/*Header------------------------*/
+header{
+	background-color: white;
+	background-image: url(../img/header.jpg);
+	/*height: 25em;*/
+	background-repeat: no-repeat;
+  	background-size: cover; 	
+  	grid-area: header;
+}
+
+.contenedorHeader{
+	height: 100%;
+	display: flex;
+	/*align-items: center;*/
+}
+
+.textoHeader{
+	background: rgba(0,0,0,0.8);
+	color: white;
+	width: 100%;
+	padding: 20px;
+}
+/*------------------------------*/
+
+/*Noticias index*/
+.contenedorNoticias{
+	display: flex;
+	flex-direction: column;
+  	align-items: center;
+  	justify-content: center;
+}
+
+.noticia{
+	margin-top: 20px;
+	background-color: white;
+	cursor: pointer;
+	padding: 20px;
+	width: 100%;
+}
+
+	.noticia img{		
+  		width: 100%;
+	}
+
+
+
+.bloqueFooter{
+	margin-top: 40px;
+	padding: 20px;
+	background-color: white;
+	height: auto;
+
+}
+/*----------------------*/
+
+/*Noticias*/
+.contenedorNot{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 0px 50px 15px 50px;
+}
+
+.anchoImgNoticias{
+	width: 100%;
+}
+
+#numeracion{
+	padding-top: 0px;
+	margin: 0px;
+	padding-bottom: 5px;
+	align-items: center;
+	text-align: center;
+}
+
+#numeracion li{
+	display: inline;
+	font-family: 'Oswald', sans-serif;
+	font-size: 1.5em;	
+	padding-left: 15px;
+}
+/*-------*/
+
+/* Botones redes sociales Nav y Footer -----*/
+.contenedorFooter{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.contFooter{
+	margin-top: 25px;
+	align-items: center;
+	flex-direction: column;
+	background-color: white;
+}
+
+	.logoFooter img{
+		width: 4.5em;
+	}
+
+.redes{
+	height: 100%;
+	display: flex;
+	align-items: center;
+	margin-left: 5px;
+}
+
+.botonRedes{
+	padding: 3px;
+	cursor: pointer;
+}
+
+	.botonRedes img{
+		width: 80%;
+	}
+
+.botonRedesFooter{
+	padding: 3px;
+	cursor: pointer;
+		margin-top: 25px;
+}
+
+	.botonRedesFooter img{
+		width: 80%;
+	}
+/*------------------------------*/
+
+
+/*Historia*/
+#tituloHistoria{
+	color: white;
+	background-color: rgba(0,0,0,0.8);
+	padding-left: 25px;
+}
+
+#contenidoHistoria{
+	color: white;
+	background-color: rgba(0,0,0,0.8);
+	padding: 25px;
+}
+
+.fondoHistoria{
+	background-image: url(../img/historia.jpg);
+	padding: 25px;
+}
+/*-------------------*/
+
+/*Ranking*/
+.contenedorRanking{
+	height: 100%;
+	width: 100%;
+	padding: 60px 25px;
+	display: flex;
+	align-items: center;
+	align-content: center;
+}
+
+.cuadroRanking{
+	width: 40%;
+	display: flex;
+	align-content: center;
+	flex-flow: column;
+	padding: 25px 25px;
+	height: auto;	
+	background-color: rgba(255,255,255,0.5);
+}
+/*-----------------*/
+
+/*Actividades*/
+#actividadesIzq{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	padding: 150px 0px 150px 0px;
+  	display: flex;
+  	align-items: center;	
+  	justify-content: left;
+}
+
+#actividadesDer{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	padding: 150px 0px 150px 0px;
+  	display: flex;
+  	align-items: center;	
+  	justify-content: right;
+}
+
+.derecha{
+	justify-content: right;
+}
+
+#actividadesContenido{
+	background-color: rgba(0,0,0,0.8);
+	color: white;
+	width: 60%;
+	padding: 30px;
+	font-size: 1.3em;
+}
+
+.fondoActividades1{
+	background-image: url(../img/actividades1.jpg);	
+	background-repeat: no-repeat;
+  	background-size: cover; 	
+
+}
+
+.fondoActividades2{
+	background-image: url(../img/actividades2.jpg);
+	background-repeat: no-repeat;
+  	background-size: cover; 	
+}
+
+.fondoActividades3{
+	background-image: url(../img/actividades3.jpg);
+	background-repeat: no-repeat;
+  	background-size: cover; 	
+}
+/*-------------*/
+
+/*Contacto*/
+#contenedorContacto{
+	background-color: rgba(0, 0, 0, 0.8);
+	padding: 50px;
+}
+
+#contenedorContacto h1{
+	color: white;
+	padding-bottom: 15px;
+}
+
+#fondoContacto{
+	background-image: url("../img/fondo2.jpg");
+	background-repeat: no-repeat;
+  	background-size: cover;
+	padding: 50px;
+}
+
+form{
+	color: white;
+	font-family: 'Oswald', sans-serif;
+	font-size: 1.3em;
+}
+/*-----------*/
+
+.centrarContenido{
+	display: flex;
+	align-items: center;
+}
+
+.contenidoVertical{
+	flex-direction: column;
+}
+
+.contenidoHorizontal{
+	flex-direction: row;
+}
+
+/* FONDOS Y COLORES */
+.grisClaro{
+	background-color: rgb(229,229,229);
+}
+
+.fondo1{
+	background-image: url("../img/header.png");
+}
+/*------------------*/
+
+
+@media only screen and (min-width: 768px){
+
+	body{
+		padding-left: 50px;
+		padding-right: 50px;
+		background-color: rgb(33,33,33);
+		grid-template-columns: 90% 10%;
+		grid-template-rows: auto auto auto auto;
+		grid-template-areas: 
+		"nav nav" 
+		"header header"
+		"main aside" 
+		"pie pie";
+	}
+
+	aside{
+		padding: 10px;
+		background-color: rgb(20, 33, 61);
+	}
+
+	#contSponsor{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	align-content: space-between;
+	}
+
+	/*Boton sandwich*/
+	.menuBoton{
+		width: 0px;
+		visibility: hidden;
+	}
+
+	.navegacion{
+		width: 80%;
+		visibility: visible;
+	}
+
+	.textoHeader{
+	background: rgba(0,0,0,0.8);
+	color: white;
+	width: 40%;
+	padding: 20px;
+	}
+
+	.contenedorHeader{
+		height: auto;
+		display: flex;
+		align-items: center;
+		margin-top: 60px;
+		margin-bottom: 60px;
+	}
+
+	.contenedorNoticias{
+		display: flex;
+		flex-direction: row;	
+	}
+
+	.noticia{
+		margin: 15px;
+		width: 94%;
+	}
+
+	.bloqueFooter{
+		margin-top: 40px;
+		padding: 20px;
+		height: 220px;
+	}
+
+	.contenedorFooter{
+		height: 100%;
+		padding: 45px 25px;
+		padding-top: 0px;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.centrarContenido{
+		justify-content: space-between;
+	}
+
+	.contFooter{
+		display: flex;
+		flex-direction: row;
+	}
+	
+	.fondoHistoria{
+		padding: 50px;
+	}
+}
+
+
+/*@media only screen and (min-width: 1024px){
+	body{
+		column-gap:30px;
+	}
+}*/
+
+/* Animaciones */
+
+header{
+	animation-name: headerAnimation;
+	animation-duration: 20s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	background-size: cover;
+}
+
+@keyframes headerAnimation{
+	0%{background-image: url(../img/header.jpg)}
+	25%{background-image: url(../img/actividades1.jpg)}
+	50%{background-image: url(../img/actividades2.jpg)}
+	75%{background-image: url(../img/actividades3.jpg)}
+	100%{background-image: url(../img/fondo2.jpg)}
+}
