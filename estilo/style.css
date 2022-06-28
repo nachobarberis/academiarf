@@ -61,7 +61,7 @@ aside{
 	}
 
 footer{
-	background-color: orange;
+	background: linear-gradient(to top,rgb(240,128,37), orange);
 	grid-area: pie;
 }
 
