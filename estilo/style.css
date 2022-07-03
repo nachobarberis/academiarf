@@ -39,10 +39,14 @@ nav, main, footer{
 	color: black;
 }
 
-nav{
-	background-color: #A29C9C;
-	grid-area: nav;
-	overflow: hidden;
+.tamLogo{
+	width: 32px;
+	height: 30px;
+}
+
+.tamIconos{
+	width: 25px;
+	height: 25px;
 }
 
 main{
@@ -466,15 +470,7 @@ form{
 	}
 
 	/*Boton sandwich*/
-	.menuBoton{
-		width: 0px;
-		visibility: hidden;
-	}
-
-	.navegacion{
-		width: 80%;
-		visibility: visible;
-	}
+	
 
 	.textoHeader{
 	background: rgba(0,0,0,0.8);
