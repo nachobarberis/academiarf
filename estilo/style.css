@@ -294,6 +294,13 @@ header{
 	color: white;
 	padding: 10px;
 }
+
+.card{
+		color: black; 
+		margin-right: 20px;
+		width: 25rem;
+		cursor: pointer;
+}
 /*-------------------*/
 
 /*Ranking*/
@@ -535,13 +542,6 @@ form{
 
 	.contHistoria{
 		padding: 25px; 
-	}
-
-	.card{
-		color: black; 
-		margin-right: 20px;
-		width: 25rem;
-		cursor: pointer;
 	}
 
 }
