@@ -1,0 +1,43 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: $fuenteCuerpo, sans-serif;
+	box-sizing: border-box;
+}
+
+h1,h2,h3{
+	font-family: $fuenteTitulo, sans-serif;
+	padding-top: 8px;
+}
+
+h4{
+	padding-top: 10px;
+	font-family: $fuenteTitulo, sans-serif;
+	color: lightgrey;
+	font-size: 1em;
+	text-align: center;
+}
+
+h1{
+	text-transform: uppercase;
+}
+
+p{
+	font-family: $fuenteCuerpo, sans-serif;
+	text-align: justify;
+	padding-top: 8px;
+
+}
+
+.centrarContenido{
+	display: flex;
+	align-items: center;
+}
+
+.contenidoVertical{
+	flex-direction: column;
+}
+
+.contenidoHorizontal{
+	flex-direction: row;
+}

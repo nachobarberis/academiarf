@@ -475,10 +475,6 @@ form{
 	align-content: space-between;
 	}
 
-	/*Boton sandwich*/
-	main{
-		padding: 45px;"
-	}
 
 	main h2{
 		margin-top: 0;
@@ -486,10 +482,10 @@ form{
 	}
 
 	.textoHeader{
-	background: rgba(0,0,0,0.8);
-	color: white;
-	width: 40%;
-	padding: 20px;
+		background: rgba(0,0,0,0.8);
+		color: white;
+		width: 40%;
+		padding: 20px;
 	}
 
 	.contenedorHeader{

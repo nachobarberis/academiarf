@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Roboto:wght@400&display=swap');
+
+//vars fonts
+$fuenteCuerpo:'Roboto', sans-serif;
+$fuenteTitulo:'Oswald', sans-serif;
+
+//sizes
+$textSm:0.8em;
+$textMd:1em;
+$textLg:1.6em;
+$textXl:3em;
+
+.textBold{
+	font-weight: 600;
+}
+
+.textCenter{
+	text-align: center;
+}
+
+.textRight{
+	text-align: right;
+}
+
+.textLeft{
+	text-align: left;
+}

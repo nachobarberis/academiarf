@@ -1,0 +1,52 @@
+header{
+	grid-area: header;
+	background-color: white;
+	background-image: url(../img/header.jpg);
+	background-repeat: no-repeat;
+  	background-size: cover; 	
+		.contenedorHeader{
+			height: 100%;
+			display: flex;
+		}
+
+		.textoHeader{
+			background: rgba(0,0,0,0.8);
+			color: white;
+			width: 100%;
+			padding: 20px;
+		}
+}
+
+@media (min-width: 767px) {
+	header{
+		.contenedorHeader{
+			height: auto;
+			display: flex;
+			align-items: center;
+			margin-top: 60px;
+			margin-bottom: 60px;
+				.textoHeader{
+					background: rgba(0,0,0,0.8);
+					color: white;
+					width: 40%;
+					padding: 20px;
+				}
+		}
+	}
+}
+
+header{
+	animation-name: headerAnimation;
+	animation-duration: 20s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	background-size: cover;
+}
+
+@keyframes headerAnimation{
+	0%{background-image: url(../img/header.jpg)}
+	25%{background-image: url(../img/actividades1.jpg)}
+	50%{background-image: url(../img/actividades2.jpg)}
+	75%{background-image: url(../img/actividades3.jpg)}
+	100%{background-image: url(../img/fondo2.jpg)}
+}

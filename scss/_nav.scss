@@ -1,0 +1,19 @@
+nav{
+	grid-area: nav;
+	.tamIconos{
+		width: 25px;
+		height: 25px;
+	}
+	.tamLogo{
+		width: 32px;
+		height: 30px;
+	}
+
+	.agrandar{
+		&:hover{
+			transform: scale(1.06);
+			cursor: pointer;
+			transition: transform 0.8s;
+		}		
+	}
+}
