@@ -6,8 +6,7 @@
 }
 
 h1,h2,h3{
-	font-family: $fuenteTitulo, sans-serif;
-	padding-top: 8px;
+	@include titulo(1.5em,black);
 }
 
 h4{
@@ -16,10 +15,6 @@ h4{
 	color: lightgrey;
 	font-size: 1em;
 	text-align: center;
-}
-
-h1{
-	text-transform: uppercase;
 }
 
 p{

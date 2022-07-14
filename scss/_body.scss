@@ -15,8 +15,8 @@ body{
 	.contenedorNoticias{
 		display: flex;
 		flex-direction: column;
-	  	align-items: center;
-	  	justify-content: center;
+	  align-items: center;
+	  justify-content: center;
 	}
 
 	.noticia{
@@ -36,6 +36,15 @@ body{
   		width: 100%;
 	}
 
+	.noticiaDestacada{
+		@extend .noticia;
+		border-width:3px;
+		border-style:solid;
+		border-color:rgba(120, 120, 120, .3);
+		h3{
+			color:orange;
+		}
+	}
 }
 
 @media (min-width: 767px) {

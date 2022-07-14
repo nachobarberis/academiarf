@@ -18,8 +18,12 @@
   box-sizing: border-box; }
 
 h1, h2, h3 {
-  font-family: "Oswald", sans-serif, sans-serif;
-  padding-top: 8px; }
+  font-size: 1.5em;
+  font-family: "Oswald", sans-serif;
+  color: black;
+  padding-top: 10px;
+  text-transform: uppercase;
+  font-weight: 600; }
 
 h4 {
   padding-top: 10px;
@@ -27,9 +31,6 @@ h4 {
   color: lightgrey;
   font-size: 1em;
   text-align: center; }
-
-h1 {
-  text-transform: uppercase; }
 
 p {
   font-family: "Roboto", sans-serif, sans-serif;
@@ -57,18 +58,24 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center; }
-  body .noticia {
+  body .noticia, body .noticiaDestacada {
     margin-top: 20px;
     background-color: white;
     cursor: pointer;
     padding: 20px;
     width: 100%; }
-    body .noticia:hover {
+    body .noticia:hover, body .noticiaDestacada:hover {
       transform: scale(1.04);
       cursor: pointer;
       transition: transform 0.8s; }
-  body .noticia img {
+  body .noticia img, body .noticiaDestacada img {
     width: 100%; }
+  body .noticiaDestacada {
+    border-width: 3px;
+    border-style: solid;
+    border-color: rgba(120, 120, 120, 0.3); }
+    body .noticiaDestacada h3 {
+      color: orange; }
 
 @media (min-width: 767px) {
   body {
@@ -81,7 +88,7 @@ body {
     body .contenedorNoticias {
       display: flex;
       flex-direction: row; }
-      body .contenedorNoticias .noticia {
+      body .contenedorNoticias .noticia, body .contenedorNoticias .noticiaDestacada {
         margin: 15px;
         width: 94%; } }
 
@@ -199,11 +206,13 @@ header {
   header .contenedorHeader {
     height: 100%;
     display: flex; }
-  header .textoHeader {
-    background: rgba(0, 0, 0, 0.8);
-    color: white;
-    width: 100%;
-    padding: 20px; }
+    header .contenedorHeader .textoHeader {
+      background: rgba(0, 0, 0, 0.8);
+      color: white;
+      width: 100%;
+      padding: 20px; }
+      header .contenedorHeader .textoHeader h1 {
+        color: white; }
 
 @media (min-width: 767px) {
   header .contenedorHeader {

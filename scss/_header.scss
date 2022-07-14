@@ -7,14 +7,16 @@ header{
 		.contenedorHeader{
 			height: 100%;
 			display: flex;
-		}
-
-		.textoHeader{
-			background: rgba(0,0,0,0.8);
-			color: white;
-			width: 100%;
-			padding: 20px;
-		}
+				.textoHeader{
+				background: rgba(0,0,0,0.8);
+				color: white;
+				width: 100%;
+				padding: 20px;
+					h1{
+						color:white;
+					}
+			}		
+		}		
 }
 
 @media (min-width: 767px) {
@@ -44,9 +46,9 @@ header{
 }
 
 @keyframes headerAnimation{
-	0%{background-image: url(../img/header.jpg)}
-	25%{background-image: url(../img/actividades1.jpg)}
-	50%{background-image: url(../img/actividades2.jpg)}
-	75%{background-image: url(../img/actividades3.jpg)}
-	100%{background-image: url(../img/fondo2.jpg)}
+	0%{background-image: map-get($map:$imagenesSlider, $key: '1')}
+	25%{background-image: map-get($map:$imagenesSlider, $key: '2')}
+	50%{background-image: map-get($map:$imagenesSlider, $key: '3')}
+	75%{background-image: map-get($map:$imagenesSlider, $key: '4')}
+	100%{background-image: map-get($map:$imagenesSlider, $key: '5')}
 }
