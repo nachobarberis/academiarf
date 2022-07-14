@@ -375,6 +375,12 @@ header{
 	background-repeat: no-repeat;
   	background-size: cover; 	
 }
+
+.fondoActividades4{
+	background-image: url(../img/actividades4.jpg);
+	background-repeat: no-repeat;
+  	background-size: cover; 	
+}
 /*-------------*/
 
 /*Contacto*/
