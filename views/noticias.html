@@ -12,10 +12,10 @@
         <!-- Bootstrap --> 
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <!-- Mi css -->
-        <link rel="stylesheet" href="../estilo/style.css">
+        <link rel="stylesheet" href="../estilo/main.css">
     </head>
 
-    <body>
+    <body class="cuerpoNoticias">
         <!-- Inicio NAV -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
           <div class="container-fluid">
@@ -23,19 +23,19 @@
                 <img src="../img/logo.png" alt="" class="tamLogo">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
               <div class="navbar-nav ms-auto mb-2 mb-lg-0">
-                <a class="nav-link" aria-current="page" href="../index.html">Principal</a>
-                <a class="nav-link" href="historia.html">Historia</a>
-                <a class="nav-link active" href="noticias.html">Noticias</a>
-                <a class="nav-link" href="actividades.html">Actividades</a>
-                <a class="nav-link" href="ranking.html">Ranking</a>
-                <a class="nav-link" href="contacto.html">Contacto</a>
-                <a class="nav-link" aria-current="page" href="index.html"><img src="../img/facebook.png" class="tamIconos"></a>
-                <a class="nav-link" aria-current="page" href="index.html"><img src="../img/instagram.png" class="tamIconos"></a>
-                <a class="nav-link" aria-current="page" href="index.html"><img src="../img/whatsapp.png" class="tamIconos"></a>
+                <a class="nav-link agrandar" aria-current="page" href="../index.html">Principal</a>
+                <a class="nav-link agrandar" href="historia.html">Historia</a>
+                <a class="nav-link active agrandar" href="noticias.html">Noticias</a>
+                <a class="nav-link agrandar" href="actividades.html">Actividades</a>
+                <a class="nav-link agrandar" href="ranking.html">Ranking</a>
+                <a class="nav-link agrandar" href="contacto.html">Contacto</a>
+                <a class="nav-link agrandar" aria-current="page" href="index.html"><img src="../img/facebook.png" class="tamIconos"></a>
+                <a class="nav-link agrandar" aria-current="page" href="index.html"><img src="../img/instagram.png" class="tamIconos"></a>
+                <a class="nav-link agrandar" aria-current="page" href="index.html"><img src="../img/whatsapp.png" class="tamIconos"></a>
               </div>
             </div>
           </div>
@@ -44,111 +44,123 @@
 
         <header></header>
 
-        <aside>
-            <h4>NOS APOYAN</h4>
+        <aside class="barraNoticias">
+            <div class="noticiasMasLeidas">
+                <div class="tituloMasLeidas">
+                    <h4>MÁS LEÍDAS</h4>
+                </div>              
+                <div>
+                   <ul class="list-group list-group-numbered">
+                      <li class="list-group-item">Título de la noticia</li>
+                      <li class="list-group-item">Título de la noticia</li>
+                      <li class="list-group-item">Título de la noticia</li>
+                      <li class="list-group-item">Título de la noticia</li>
+                      <li class="list-group-item">Título de la noticia</li>                    
+                    </ul>
+                </div>
+            </div>
             <div id="contSponsor">
+                <h4>NOS APOYAN</h4>
                 <div id="sponsor">
-                    <img src="../img/1.png" alt="">
+                    <img src="../img/1.png" alt="logo de asics">
                 </div>
                 <div id="sponsor">
-                    <img src="../img/2.png" alt="">
+                    <img src="../img/2.png" alt="logo de dunlop">
                 </div>
                 <div id="sponsor">
-                    <img src="../img/3.png" alt="">
+                    <img src="../img/3.png" alt="logo de tennis point">
                 </div>
                 <div id="sponsor">
-                    <img src="../img/4.png" alt="">
+                    <img src="../img/4.png" alt="logo de slinger">
                 </div>
                 <div id="sponsor">
-                    <img src="../img/5.png" alt="">
+                    <img src="../img/5.png" alt="logo de tennis europe">
                 </div>
                 <div id="sponsor">
-                    <img src="../img/6.png" alt="">
+                    <img src="../img/6.png" alt="logo de halo">
                 </div>
             </div>
         </aside>
 
-        <main class="grisClaro">
+        <main class="fondo1">
+            <div class="tituloNoticias">
+                <h2 class="blanco">Noticias de la Academia</h2>
+            </div>  
             <section>
-                <div class="tituloNoticias grisClaro">
-                    <h2>Noticias de la Academia</h2>
-                </div>  
-               
-                <div class="contenedorNot grisClaro">                                                   
+                <div class="contenedorNoticias">
                     <article>
                         <div class="noticia">
-                            <img src="../img/noticia1.jpg" alt="" class="anchoImgNoticias">
+                            <img src="../img/noticia1.jpg" alt="dolgopolov pegando un drive" class="anchoImgNoticias">
                             <h3>Título de la noticia</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo...</p>
-                        </div>               
+                            tempor incididunt ut labore et dolore magna aliqua...</p>
+                        </div>     
                     </article>
-                    <article>
+                    <article>          
                         <div class="noticia">
-                            <img src="../img/noticia2.jpg" alt="" class="anchoImgNoticias">
+                            <img src="../img/noticia2.jpg" alt="zverev y thiem" class="anchoImgNoticias">
                             <h3>Título de la noticia</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo...</p>
+                            tempor incididunt ut labore et dolore magna aliqua...</p>
                         </div>                
                     </article>
                     <article>
                         <div class="noticia">
-                            <img src="../img/noticia3.jpg" alt="" class="anchoImgNoticias">
+                            <img src="../img/noticia3.jpg" alt="gonzalez posando con la medalla" class="anchoImgNoticias">
                             <h3>Título de la noticia</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo...</p>
+                            tempor incididunt ut labore et dolore magna aliqua...</p>
                         </div>                  
-                    </article>  
-                </div>     
-
-                <div class="contenedorNot grisClaro">                                                    
-                    <article>
-                        <div class="noticia">
-                            <img src="../img/noticia1.jpg" alt="" class="anchoImgNoticias">
-                            <h3>Título de la noticia</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo...</p>
-                        </div>               
                     </article>
+                </div>
+                <div class="contenedorNoticias">
                     <article>
                         <div class="noticia">
-                            <img src="../img/noticia2.jpg" alt="" class="anchoImgNoticias">
+                            <img src="../img/noticia1.jpg" alt="dolgopolov pegando un drive" class="anchoImgNoticias">
                             <h3>Título de la noticia</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo...</p>
+                            tempor incididunt ut labore et dolore magna aliqua...</p>
+                        </div>     
+                    </article>
+                    <article>          
+                        <div class="noticia">
+                            <img src="../img/noticia2.jpg" alt="zverev y thiem" class="anchoImgNoticias">
+                            <h3>Título de la noticia</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua...</p>
                         </div>                
                     </article>
                     <article>
                         <div class="noticia">
-                            <img src="../img/noticia3.jpg" alt="" class="anchoImgNoticias">
+                            <img src="../img/noticia3.jpg" alt="gonzalez posando con la medalla" class="anchoImgNoticias">
                             <h3>Título de la noticia</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo...</p>
+                            tempor incididunt ut labore et dolore magna aliqua...</p>
                         </div>                  
-                    </article>  
-                </div>                 
-            </section>
-
-            <div id="numeracion">
-                <ul>
-                    <li><a href="">1</a></li>
-                    <li><a href="">2</a></li>
-                    <li><a href="">3</a></li>
-                    <li><a href="">4</a></li>
-                    <li><a href="">5</a></li>
-                    <li><a href="">6</a></li>
-                    <li><a href="">7</a></li>
-                    <li><a href="">8</a></li>
-                </ul>
-            </div>
+                    </article>
+                </div>
+                <div class="navegacion">
+                    <nav aria-label="Page navigation example">
+                      <ul class="pagination justify-content-center">
+                        <li class="page-item disabled">
+                          <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Anterior</a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">4</a></li>
+                        <li class="page-item"><a class="page-link" href="#">5</a></li>
+                        <li class="page-item"><a class="page-link" href="#">6</a></li>
+                        <li class="page-item"><a class="page-link" href="#">7</a></li>
+                        <li class="page-item"><a class="page-link" href="#">...</a></li>
+                        <li class="page-item">
+                          <a class="page-link" href="#">Siguiente</a>
+                        </li>
+                      </ul>
+                    </nav>
+                </div>
+            </section>          
         </main>
-
       <footer>        
             <!-- Logo y redes sociales -->
             <div class="contenedorFooter">           

@@ -83,6 +83,10 @@ body{
 	"pie"
 }
 
+.sinPadding{
+	padding:0px;
+}
+
 section{
 	/*overflow: auto;*/
 }
@@ -129,6 +133,7 @@ nav{
 #sponsor{
 	width: 100%;
 	padding: 15px;
+	text-align: center;
 }
 
 	#sponsor img{
@@ -199,28 +204,13 @@ header{
 /*Noticias*/
 .contenedorNot{
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	justify-content: space-between;
-	padding: 0px 50px 15px 50px;
+	padding: 0px 5px 15px 5px;
 }
 
 .anchoImgNoticias{
 	width: 100%;
-}
-
-#numeracion{
-	padding-top: 0px;
-	margin: 0px;
-	padding-bottom: 5px;
-	align-items: center;
-	text-align: center;
-}
-
-#numeracion li{
-	display: inline;
-	font-family: 'Oswald', sans-serif;
-	font-size: 1.5em;	
-	padding-left: 15px;
 }
 /*-------*/
 
@@ -272,21 +262,26 @@ header{
 
 
 /*Historia*/
+
+.cuerpoHistoria{
+	width: 100%;
+}
+
 #tituloHistoria{
 	color: white;
 	background-color: rgba(0,0,0,0.8);
-	padding-left: 25px;
+	padding-left: 10px;
 }
 
 #contenidoHistoria{
 	color: white;
 	background-color: rgba(0,0,0,0.8);
-	padding: 25px;
+	padding: 10px;
 }
 
 .fondoHistoria{
 	background-image: url(../img/historia/fondo.png);
-	padding: 25px;
+	padding: 10px;
 }
 
 .contHistoria{
@@ -296,43 +291,58 @@ header{
 }
 
 .card{
-		color: black; 
-		margin-right: 20px;
-		width: 25rem;
-		cursor: pointer;
+	padding: 10px;
 }
 /*-------------------*/
 
 /*Ranking*/
-.contenedorRanking{
-	height: 100%;
-	width: 100%;
-	padding: 60px 25px;
-	display: flex;
+
+#encabezadoRanking{
+	display: flex; 
+	justify-content: center; 
+	align-items: center; 
+	background-color: orange;
+}
+
+#tituloRanking{
+	display: flex; 
+	justify-content: center; 
 	align-items: center;
-	align-content: center;
+}
+.contenedorRanking{
+	max-resolution: 0;
+	width: 100%;
+	height: 100%;
+	padding: 15px 5px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	align-content:space-around;
 }
 
 .cuadroRanking{
-	width: 40%;
+	margin-top: 15px;
+	width: 95%;
 	display: flex;
+	flex-direction: column;
 	align-content: center;
-	flex-flow: column;
-	padding: 25px 25px;
+	padding: 5px 5px;
 	height: auto;	
-	background-color: rgba(255,255,255,0.5);
+	background-color: rgba(255,255,255,0.8);
+	border-radius: 15px;
+	margin-left: 5px;
 }
 /*-----------------*/
 
 /*Actividades*/
-#actividadesIzq{
+#actividades{
 	margin: 0;
 	padding: 0;
 	width: 100%;
 	padding: 150px 0px 150px 0px;
   	display: flex;
   	align-items: center;	
-  	justify-content: left;
+  	justify-content: center;
 }
 
 #actividadesDer{
@@ -352,16 +362,15 @@ header{
 #actividadesContenido{
 	background-color: rgba(0,0,0,0.8);
 	color: white;
-	width: 60%;
-	padding: 30px;
-	font-size: 1.3em;
+	width: 90%;
+	padding: 20px;
+	font-size: 1em;
 }
 
 .fondoActividades1{
 	background-image: url(../img/actividades1.jpg);	
 	background-repeat: no-repeat;
   	background-size: cover; 	
-
 }
 
 .fondoActividades2{
@@ -435,6 +444,9 @@ form{
 }
 /*------------------*/
 
+@media only screen and (min-width: 393px){
+
+}
 
 @media only screen and (min-width: 768px){
 
@@ -456,12 +468,30 @@ form{
 		padding-right: 50px;
 		background-color: rgb(33,33,33);
 		grid-template-columns: 100%;
-		grid-template-rows: auto auto auto auto;
+		grid-template-rows: auto auto auto auto auto;
 		grid-template-areas: 
 		"nav" 
 		"header"
 		"main" 
+		"aside"
 		"pie";
+	}
+
+	.cuerpoNoticias{
+		padding-left: 50px;
+		padding-right: 50px;
+		background-color: rgb(33,33,33);
+		grid-template-columns: 85% 15%;
+		grid-template-rows: auto auto auto auto;
+		grid-template-areas: 
+		"nav nav" 
+		"header header"
+		"main aside" 
+		"pie pie";
+	}
+
+	.list-group-item{
+		font-family: 'Oswald', sans-serif;
 	}
 
 	aside{
@@ -473,14 +503,6 @@ form{
 		width: 100%;
 		background-color: red;
 	}
-
-	#contSponsor{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	align-content: space-between;
-	}
-
 
 	main h2{
 		margin-top: 0;
@@ -546,6 +568,45 @@ form{
 		padding: 25px; 
 	}
 
+	.card{
+		/*width: 25rem;*/
+	}
+
+	/*ranking*/
+
+	.contenedorRanking{
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		align-content: space-around;
+		padding-left: 25px;
+		padding-right: 25px;
+	}
+
+	.cuadroRanking{
+		width: 600px;
+		padding: 25px 25px;	
+	}
+
+	/*Noticias*/
+	.contenedorNot{
+		width: 100%;
+		padding-left: 15px;
+		padding-right: 15px;
+		display: flex;
+		align-content: space-between;
+		flex-wrap: wrap-reverse;
+		justify-content: space-evenly;
+	}
+
+	/*actividades*/
+	#actividadesContenido{
+		width: 60%;
+		font-size: 1.2em;
+		padding: 25px;
+	}
+
 }
 
 /* Animaciones */
@@ -576,4 +637,12 @@ header{
 	transform: scale(1.06);
 	cursor: pointer;
 	transition: transform 0.8s;
+}
+
+.barraNoticias{
+	background-color: white;
+}
+
+.noti{
+	width: 100%;
 }
