@@ -3,7 +3,8 @@
 body{
 	background-color: rgb(33,33,33);
 	display: grid;
-	grid-template-columns: 1fr;
+	width: 100vw;
+	grid-template-columns: 100%;
 	grid-template-rows: auto auto auto auto auto;
 	grid-template-areas: 
 	"nav" 
@@ -206,7 +207,6 @@ aside{
 
 /*Historia*/
 .cuerpoHistoria{
-	width: 100vw;
 	#tituloHistoria{
 		color: white;
 		background-color: rgba(0,0,0,0.8);
@@ -315,6 +315,9 @@ aside{
 }
 
 @media (min-width: 767px) {
+	.cuerpoNoticia{
+		grid-template-columns: 85% 15%;
+	}
 	.barraNoticias{
 		#contSponsor{
 			text-align: center;
@@ -324,9 +327,6 @@ aside{
 				}
 			}
 		}
-	}
-	.cuerpoNoticias{
-		grid-template-columns: 85% 15%;
 	}
 }
 /*Fin Noticias*/
