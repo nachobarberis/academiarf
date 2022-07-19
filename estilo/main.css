@@ -11,6 +11,9 @@
 .textLeft {
   text-align: left; }
 
+.fuenteTitulo {
+  font-family: "Oswald", sans-serif; }
+
 * {
   padding: 0;
   margin: 0;
@@ -53,6 +56,9 @@ p {
 .sinPadding {
   padding: 0px; }
 
+.justify-content-center {
+  justify-content: center; }
+
 body {
   background-color: #212121;
   display: grid;
@@ -76,12 +82,16 @@ body {
       transform: scale(1.04);
       cursor: pointer;
       transition: transform 0.8s; }
-  body .noticia img, body .noticiaDestacada img {
-    width: 100%; }
+    body .noticia img, body .noticiaDestacada img {
+      width: 100%; }
+    body .noticia h3, body .noticiaDestacada h3 {
+      color: #191919;
+      text-shadow: 1px 1px #fafafa; }
   body .noticiaDestacada {
     border-width: 3px;
     border-style: solid;
-    border-color: rgba(120, 120, 120, 0.3); }
+    border-color: rgba(120, 120, 120, 0.3);
+    width: 100%; }
     body .noticiaDestacada h3 {
       color: orange; }
 
@@ -95,7 +105,8 @@ body {
     grid-template-areas: "nav nav"  "header header" "main aside"  "pie pie"; }
     body .contenedorNoticias {
       display: flex;
-      flex-direction: row; }
+      flex-direction: row;
+      width: 100%; }
       body .contenedorNoticias .noticia, body .contenedorNoticias .noticiaDestacada {
         margin: 15px;
         width: 94%;
@@ -199,7 +210,7 @@ aside {
     display: flex;
     flex-direction: row; }
     .contenedorRanking .cuadroRanking {
-      width: 45%;
+      width: 35%;
       padding: 15px;
       margin: 10px; } }
 
@@ -341,6 +352,36 @@ aside {
     margin-left: 30%; } }
 
 /*Fin Actividades*/
+/*Contacto*/
+#fondoContacto {
+  background-image: url("../img/fondo2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 10px; }
+  #fondoContacto #contenedorContacto {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 15px; }
+    #fondoContacto #contenedorContacto .tituloContacto {
+      border-bottom: 1px solid white;
+      margin-bottom: 25px; }
+      #fondoContacto #contenedorContacto .tituloContacto h1 {
+        color: orange; }
+      #fondoContacto #contenedorContacto .tituloContacto p {
+        color: white; }
+    #fondoContacto #contenedorContacto .boton {
+      background-color: orange;
+      border-style: none;
+      width: 180px;
+      font-family: "Oswald", sans-serif;
+      font-size: 1.2em; }
+
+@media (min-width: 767px) {
+  #fondoContacto {
+    padding: 25px; }
+    #fondoContacto #contenedorContacto {
+      padding: 25px; } }
+
+/*Fin Contacto*/
 footer {
   grid-area: pie;
   background-color: orange;
