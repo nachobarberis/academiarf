@@ -40,6 +40,9 @@ p {
   text-align: justify;
   padding-top: 8px; }
 
+table {
+  cursor: pointer; }
+
 .centrarContenido {
   display: flex;
   align-items: center; }
@@ -59,6 +62,15 @@ p {
 .justify-content-center {
   justify-content: center; }
 
+.centrarTexto {
+  text-align: center; }
+
+.sinTop {
+  margin-top: 0px; }
+
+.cursorPointer {
+  cursor: pointer; }
+
 body {
   background-color: #212121;
   display: grid;
@@ -69,31 +81,30 @@ body {
   body .contenedorNoticias {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center; }
-  body .noticia, body .noticiaDestacada {
-    margin-top: 20px;
-    background-color: white;
-    cursor: pointer;
-    padding: 10px;
-    width: 100%;
-    border-radius: 5px; }
-    body .noticia:hover, body .noticiaDestacada:hover {
-      transform: scale(1.04);
+    body .contenedorNoticias .noticia, body .contenedorNoticias .noticiaDestacada {
+      margin-top: 20px;
+      background-color: white;
       cursor: pointer;
-      transition: transform 0.8s; }
-    body .noticia img, body .noticiaDestacada img {
+      padding: 15px;
+      width: 100%;
+      border-radius: 5px; }
+      body .contenedorNoticias .noticia:hover, body .contenedorNoticias .noticiaDestacada:hover {
+        transform: scale(1.04);
+        cursor: pointer;
+        transition: transform 0.8s; }
+      body .contenedorNoticias .noticia img, body .contenedorNoticias .noticiaDestacada img {
+        width: 100%; }
+      body .contenedorNoticias .noticia h3, body .contenedorNoticias .noticiaDestacada h3 {
+        color: #191919;
+        text-shadow: 1px 1px #fafafa; }
+    body .contenedorNoticias .noticiaDestacada {
+      border-width: 3px;
+      border-style: solid;
+      border-color: rgba(120, 120, 120, 0.3);
       width: 100%; }
-    body .noticia h3, body .noticiaDestacada h3 {
-      color: #191919;
-      text-shadow: 1px 1px #fafafa; }
-  body .noticiaDestacada {
-    border-width: 3px;
-    border-style: solid;
-    border-color: rgba(120, 120, 120, 0.3);
-    width: 100%; }
-    body .noticiaDestacada h3 {
-      color: orange; }
+      body .contenedorNoticias .noticiaDestacada h3 {
+        color: orange; }
 
 @media (min-width: 767px) {
   body {
@@ -106,7 +117,10 @@ body {
     body .contenedorNoticias {
       display: flex;
       flex-direction: row;
-      width: 100%; }
+      align-items: stretch;
+      width: 100%;
+      height: 100%;
+      overflow: hidden; }
       body .contenedorNoticias .noticia, body .contenedorNoticias .noticiaDestacada {
         margin: 15px;
         width: 94%;
@@ -136,6 +150,7 @@ aside {
 
 @media (min-width: 767px) {
   aside {
+    width: 100%;
     padding: 10px;
     background-color: #14213d; }
     aside #contSponsor {
@@ -147,34 +162,36 @@ aside {
 /*Ranking*/
 .mainRanking {
   padding: 0px; }
-
-#encabezadoRanking {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #14213d; }
-  #encabezadoRanking h1 {
-    color: white; }
-
-#tituloRanking {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center; }
-  #tituloRanking h2 {
-    width: 100%; }
+  .mainRanking #encabezadoRanking {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #14213d; }
+    .mainRanking #encabezadoRanking h1 {
+      color: white; }
 
 .contenedorRanking {
   max-resolution: 0;
   width: 100%;
   height: 100%;
-  padding: 10px 10px;
+  padding: 15px;
   padding-bottom: 25px;
   display: flex;
   flex-direction: column;
   background-image: url(../img/ranking/fondo.jpg);
   background-size: 100%; }
+  .contenedorRanking #tituloRanking {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 55px;
+    background-color: #233a6b; }
+    .contenedorRanking #tituloRanking h2 {
+      width: 100%;
+      color: white; }
   .contenedorRanking .cuadroRanking {
+    overflow: hidden;
     margin-top: 15px;
     width: 100%;
     display: flex;
@@ -187,16 +204,15 @@ aside {
     margin-left: 0px; }
     .contenedorRanking .cuadroRanking table {
       margin-top: 10px;
-      text-align: center;
       vertical-align: middle; }
       .contenedorRanking .cuadroRanking table th {
-        text-align: center; }
+        background-color: orange;
+        color: #233a6b; }
       .contenedorRanking .cuadroRanking table td {
         font-family: "Oswald", sans-serif;
         font-size: 1.2em;
-        vertical-align: middle; }
-        .contenedorRanking .cuadroRanking table td .centrarTabla {
-          text-align: center; }
+        vertical-align: middle;
+        text-align: left; }
         .contenedorRanking .cuadroRanking table td img {
           padding-right: 15px; }
 
@@ -212,7 +228,7 @@ aside {
     .contenedorRanking .cuadroRanking {
       width: 35%;
       padding: 15px;
-      margin: 10px; } }
+      margin-top: 0px; } }
 
 /*Fin Ranking*/
 /*Historia*/
@@ -234,7 +250,7 @@ aside {
   .cuerpoHistoria .fondoHistoria .contHistoria {
     background-color: rgba(20, 20, 20, 0.8);
     color: white;
-    padding: 10px; }
+    padding: 15px; }
     .cuerpoHistoria .fondoHistoria .contHistoria h3 {
       color: orange; }
     .cuerpoHistoria .fondoHistoria .contHistoria .card {
@@ -285,7 +301,8 @@ aside {
   color: white; }
 
 .navegacion {
-  margin-top: 15px; }
+  margin-top: 15px;
+  cursor: pointer; }
 
 @media (min-width: 767px) {
   .cuerpoNoticia {

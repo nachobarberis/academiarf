@@ -21,7 +21,10 @@ p{
 	font-family: $fuenteCuerpo, sans-serif;
 	text-align: justify;
 	padding-top: 8px;
+}
 
+table{
+	cursor: pointer;
 }
 
 .centrarContenido{
@@ -47,4 +50,16 @@ p{
 
 .justify-content-center{
 	justify-content: center;
+}
+
+.centrarTexto{
+	text-align: center;
+}
+
+.sinTop{
+	margin-top: 0px;
+}
+
+.cursorPointer{
+	cursor: pointer;
 }
