@@ -487,7 +487,7 @@ header {
       width: 100%;
       padding: 20px; }
       header .contenedorHeader .textoHeader h1 {
-        color: white; }
+        color: orange; }
 
 @media (min-width: 767px) {
   header .contenedorHeader {
@@ -500,9 +500,7 @@ header {
       background: rgba(0, 0, 0, 0.8);
       color: white;
       width: 40%;
-      padding: 20px; }
-      header .contenedorHeader .textoHeader h1 {
-        color: orange; } }
+      padding: 20px; } }
 
 header {
   animation-name: headerAnimation;
